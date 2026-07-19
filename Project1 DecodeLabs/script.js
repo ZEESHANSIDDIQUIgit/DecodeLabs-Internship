@@ -38,9 +38,10 @@ faqItems.forEach(item => {
 
 
 // ============================================
-// ANIMATED STAT COUNTER
+// ANIMATED + LIVE-UPDATING STAT COUNTER
 // ============================================
 const statValue = document.querySelector('.mockup-stat-value');
+let currentStatValue = 0;
 
 function animateCounter(el, target, duration = 1500) {
   const startTime = performance.now();
@@ -49,12 +50,27 @@ function animateCounter(el, target, duration = 1500) {
     const progress = Math.min((now - startTime) / duration, 1);
     const value = Math.floor(progress * target);
     el.textContent = value.toLocaleString();
+    currentStatValue = value;
     if (progress < 1) {
       requestAnimationFrame(tick);
+    } else {
+      currentStatValue = target;
+      startLiveUpdates(el);
     }
   }
 
   requestAnimationFrame(tick);
+}
+
+function startLiveUpdates(el) {
+  setInterval(() => {
+    const delta = Math.floor(Math.random() * 12) - 3;
+    currentStatValue = Math.max(0, currentStatValue + delta);
+    el.textContent = currentStatValue.toLocaleString();
+
+    el.classList.add('stat-pulse');
+    setTimeout(() => el.classList.remove('stat-pulse'), 400);
+  }, 2200);
 }
 
 if (statValue) {

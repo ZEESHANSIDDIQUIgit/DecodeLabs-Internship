@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axiom — Turn Data Into Answers</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+<base target="_blank">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Axiom</a>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#" class="btn btn-primary nav-cta">Start Free Trial</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO (asymmetric) ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="eyebrow">Introducing Axiom</span>
+          <h1 id="rotating-headline" class="rotating-text">Turn raw data into real answers.</h1>
+          <p>Axiom connects to your data, surfaces the insights that matter, and helps your team make decisions faster — no data science degree required.</p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+            <a href="#features" class="btn btn-secondary">See it in Action</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="dashboard-mockup">
+            <div class="mockup-header">
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-stat">
+                <span class="mockup-stat-value" data-target="14200">0</span>
+                <span class="mockup-stat-label">Datasets Analyzed</span>
+              </div>
+              <svg class="mockup-chart" viewBox="0 0 300 100" preserveAspectRatio="none">
+                <polyline points="0,80 40,60 80,65 120,40 160,50 200,20 240,30 300,10"
+                  fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="mockup-bars">
+                <div class="mockup-bar" style="height: 40%"></div>
+                <div class="mockup-bar" style="height: 65%"></div>
+                <div class="mockup-bar" style="height: 50%"></div>
+                <div class="mockup-bar" style="height: 80%"></div>
+                <div class="mockup-bar" style="height: 60%"></div>
+              </div>
+            </div>
+            <div class="mockup-float-card">
+              <span class="mockup-float-label">Live</span>
+              <span class="mockup-float-value">+18.4%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS BAND (new section) ===== -->
+    <section class="stats-band">
+      <div class="container stats-grid">
+        <div class="stat-block">
+          <span class="stat-number">14K+</span>
+          <span class="stat-caption">Datasets processed daily</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-number">99.9%</span>
+          <span class="stat-caption">Platform uptime</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-number">3.2s</span>
+          <span class="stat-caption">Average query response</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES (bento grid) ===== -->
+    <section class="features" id="features">
+      <div class="container">
+        <span class="eyebrow eyebrow-center">Why Axiom</span>
+        <h2 class="section-title">Built for teams who run on data</h2>
+        <p class="section-subtitle">Everything you need to go from raw numbers to real decisions.</p>
+
+        <div class="bento-grid">
+          <article class="feature-card feature-card-large">
+            <div class="feature-icon">🔍</div>
+            <h3>Instant Insights</h3>
+            <p>AI automatically surfaces trends, outliers, and anomalies in your data the moment they appear — no manual queries, no waiting on a data team. Just open the dashboard and the story is already written for you.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Real-Time Sync</h3>
+            <p>Dashboards update live as new data arrives.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Enterprise-Grade Security</h3>
+            <p>Encrypted pipelines, compliant storage.</p>
+          </article>
+
+          <article class="feature-card feature-card-wide">
+            <div class="feature-icon">🧩</div>
+            <h3>No-Code Integrations</h3>
+            <p>Connect to Slack, databases, and spreadsheets in a few clicks — no engineering ticket required.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIAL (new section) ===== -->
+    <section class="testimonial">
+      <div class="container testimonial-inner">
+        <p class="testimonial-quote">"We went from a two-day reporting cycle to real-time answers our whole team could act on immediately."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Head of Operations</span>
+          <span class="testimonial-role">Mid-market logistics company</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <span class="eyebrow eyebrow-center">Pricing</span>
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-subtitle">Start free, scale as your team grows.</p>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3>Starter</h3>
+            <p class="price">$0</p>
+            <ul class="pricing-features">
+              <li>3 dashboards</li>
+              <li>1 data source</li>
+              <li>Community support</li>
+            </ul>
+            <a href="#" class="btn btn-secondary">Get Started</a>
+          </article>
+
+          <article class="pricing-card pricing-card-highlight">
+            <span class="pricing-badge">Most Popular</span>
+            <h3>Pro</h3>
+            <p class="price">$49<span class="price-period">/mo</span></p>
+            <ul class="pricing-features">
+              <li>Unlimited dashboards</li>
+              <li>AI-powered insights</li>
+              <li>Unlimited data sources</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Start Free Trial</a>
+          </article>
+
+          <article class="pricing-card">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <ul class="pricing-features">
+              <li>Custom integrations</li>
+              <li>Dedicated support</li>
+              <li>SLA guarantees</li>
+            </ul>
+            <a href="#" class="btn btn-secondary">Contact Sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <span class="eyebrow eyebrow-center">FAQ</span>
+        <h2 class="section-title">Frequently asked questions</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              What data sources can I connect?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Axiom connects to most SQL databases, spreadsheets, and popular SaaS tools out of the box, with more integrations added regularly.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Is my data secure?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — all data is encrypted in transit and at rest, and Axiom never shares your data with third parties.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do I need to know how to code?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No — Axiom is designed for no-code setup, though advanced users can write custom queries if they want more control.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I cancel anytime?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, you can upgrade, downgrade, or cancel your plan at any time with no long-term contracts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Axiom. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
